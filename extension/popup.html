@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>passwdOn · 快捷填充</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body class="popup">
+  <header class="bar">
+    <div class="brand"><img src="icons/48.png" alt="" width="32" height="32"> passwdOn</div>
+    <button type="button" class="quiet" id="manage">管理密码库</button>
+  </header>
+  <main>
+    <section id="gate" hidden></section>
+    <section id="picker" hidden>
+      <p class="eyebrow">当前站点</p>
+      <h1 id="site">—</h1>
+      <p id="detection" class="muted" role="status"></p>
+      <div id="matches" class="matches"></div>
+      <div class="foot">
+        <button type="button" class="quiet" id="scan">重新识别</button>
+        <button type="button" class="quiet" id="lock">锁定</button>
+      </div>
+    </section>
+    <p id="app-error" class="error" role="alert" hidden></p>
+  </main>
+</body>
+</html>
